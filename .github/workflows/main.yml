@@ -1,6 +1,4 @@
 on: [push]
-  branches:
-    - master 
 
 jobs:
   my-job: 
@@ -15,5 +13,5 @@ jobs:
         myInput: 'Ben'
    - name: output
      run : |
-       echo ${{ steps.hello.outputs.MEMORY }}
+       echo ${{ steps.hello.outputs.memory }}
        echo "total memory successfully output"
