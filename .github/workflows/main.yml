@@ -1,4 +1,4 @@
-on: push
+on: [push]
 
 jobs:
   my-job: 
@@ -11,7 +11,7 @@ jobs:
       uses: ./
       with:
         myInput: 'Ben'
-   - name: output
+   - name: output the memory
      run : |
        echo ${{ steps.hello.outputs.memory }}
        echo "total memory successfully output"
