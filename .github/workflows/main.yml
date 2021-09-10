@@ -7,10 +7,15 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: run the action
-      id: hello
+      id: logs 
       uses: ./
       with:
         myInput: 'Ben'
-    - name: output the memory
+    - name: Revision version: 
       run: |
-        echo ${{ steps.hello.outputs.revision }}
+        echo "The linux revision is:"
+        echo ${{ steps.logs.outputs.revision }}
+    - name: Output Memory:
+      run : |
+        echo "Memory info:"
+        echo ${{ steps.logs.outputs.memory }}
