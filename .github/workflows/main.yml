@@ -1,7 +1,7 @@
 on: [push]
 
 jobs:
-  my-job: 
+  my-job:
     runs-on: ubuntu-latest
 
     steps:
@@ -9,7 +9,9 @@ jobs:
     - name: run the action
       id: hello
       uses: ./
-   - name: output the memory
-     run : |
-       echo ${{ steps.hello.outputs.memory }}
-       echo "total memory successfully output"
+      with:
+        myInput: 'Chad'
+    - name: output the memory
+      run: |
+        echo ${{ steps.hello.outputs.memory }}
+        echo "total memory successfully output"
