@@ -15,7 +15,7 @@ jobs:
       run: |
         echo "The linux revision is:"
         echo ${{ steps.logs.outputs.revision }}
-    - name: Output Memory:
+    - name: Output Memory
       run : |
         echo "Memory info:"
         echo ${{ steps.logs.outputs.memory }}
