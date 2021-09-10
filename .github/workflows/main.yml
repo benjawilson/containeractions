@@ -9,8 +9,6 @@ jobs:
     - name: run the action
       id: hello
       uses: ./
-      #      with:
-      #  myInput: 'Ben'
    - name: output the memory
      run : |
        echo ${{ steps.hello.outputs.memory }}
