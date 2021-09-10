@@ -11,7 +11,7 @@ jobs:
       uses: ./
       with:
         myInput: 'Ben'
-    - name: Revision version: 
+    - name: Revision Version 
       run: |
         echo "The linux revision is:"
         echo ${{ steps.logs.outputs.revision }}
