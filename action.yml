@@ -2,7 +2,7 @@ name: 'my first container action'
 description: 'A Cloud Guru'
 author: 'Ben'
 inputs: 
-  MyInput:
+  myInput:
     description: 'greeting to use'
     required: true
     default: 'Awesome Guru'
